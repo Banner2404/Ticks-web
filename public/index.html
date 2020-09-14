@@ -2,64 +2,70 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.19.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.19.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.19.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.19.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.19.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Ticks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+
+    <header class="jumbotron">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6">
+            <img class="mx-auto d-block" src="images/app_icon.png" alt="App icon">
+          </div>
+          <div class="col media-body align-self-center">
+            <h1>Ticks</h1>
+            <h4>Простое и удобное приложения для хранения билетов белорусской ЖД</h4>
+            <a href="https://apps.apple.com/by/app/ticks/id1434331271?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-09-08&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <div class="container features">
+      <h2>Возможности</h2>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="mx-auto d-block" src="images/tickets.png" alt="App icon">
+        </div>
+        <div class="col align-self-center">
+          <h5>Билеты всегда под рукой</h5>
+          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 order-sm-last">
+          <img class="mx-auto d-block" src="images/gmail.png" alt="App icon">
+        </div>
+        <div class="col align-self-center">
+          <h5>Автоматически синхронизируйте билеты белорусской ЖД с помощью почты Gmail.</h5>
+          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <img class="mx-auto d-block" src="images/alerts.png" alt="App icon">
+        </div>
+        <div class="col align-self-center">
+          <h5>Настройте множество напоминаний, чтобы никогда не пропустить свой поезд.</h5>
+          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-6 order-sm-last">
+          <img class="mx-auto d-block" src="images/watch.png" alt="App icon">
+        </div>
+        <div class="col align-self-center">
+          <h5>Получайте доступ к своим билетам в любое момент, даже не открывая приложения с помощью виджета и Apple Watch приложения.</h5>
+          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
