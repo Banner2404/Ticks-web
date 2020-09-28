@@ -1,3 +1,51 @@
-.features {
-    max-width: 800px;
+.navbar {
+    background-color: #8EB1B6;
+}
+
+.jumbotron {
+    margin: 0px;
+    
+    background-color: #276a7333;
+    border-radius: 0px;
+}
+
+.jumbotron.light {
+    background-color: white;
+}
+
+.jumbotron.dark {
+    background-color: #8EB1B6;
+}
+
+header.jumbotron {
+    padding-top: 100px;
+}
+
+.first-container {
+    padding-top: 100px;
+}
+
+.section-header {
+    margin-bottom: 30px;
+}
+
+.header-subtitle {
+    margin-bottom: 20px;
+}
+
+.developer-name {
+    margin: 0px;
+}
+
+.developer-subtitle {
+    margin-top: 0px;
+}
+a {
+    color: #043b40;
+    font-weight: 700;
+}
+
+.brand {
+    font-size: 1.5em;
+    font-weight: 700;
 }

@@ -6,8 +6,30 @@
     <title>Ticks</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href=""><h4 class="brand">Ticks</h4></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Возможности</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#privacy">Приватность</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#developer">О разработчике</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <header class="jumbotron">
       <div class="container">
@@ -17,53 +39,81 @@
           </div>
           <div class="col media-body align-self-center">
             <h1>Ticks</h1>
-            <h4>Простое и удобное приложения для хранения билетов белорусской ЖД</h4>
+            <h4 class="header-subtitle">Простое и удобное приложения для хранения билетов белорусской ЖД</h4>
             <a href="https://apps.apple.com/by/app/ticks/id1434331271?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2018-09-08&kind=iossoftware&bubble=ios_apps) no-repeat;width:135px;height:40px;"></a>
           </div>
         </div>
       </div>
     </header>
-    
-    <div class="container features">
-      <h2>Возможности</h2>
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <img class="mx-auto d-block" src="images/tickets.png" srcset="images/tickets.png 1x, images/tickets@2x.png 2x, images/tickets@3x.png 3x" alt="App icon">
+
+    <div class="jumbotron light" id="features">
+      <div class="container">
+        <h2 class="section-header">Возможности</h2>
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <img class="mx-auto d-block" src="images/tickets.png" srcset="images/tickets.png 1x, images/tickets@2x.png 2x, images/tickets@3x.png 3x" alt="App icon">
+          </div>
+          <div class="col align-self-center">
+            <h5>Билеты всегда под рукой</h5>
+            <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+          </div>
         </div>
-        <div class="col align-self-center">
-          <h5>Билеты всегда под рукой</h5>
-          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+        <div class="row">
+          <div class="col-12 col-sm-6 order-sm-last">
+            <img class="mx-auto d-block" src="images/gmail.png" srcset="images/gmail.png 1x, images/gmail@2x.png 2x, images/gmail@3x.png 3x" alt="App icon">
+          </div>
+          <div class="col align-self-center">
+            <h5>Автоматическая синхронизация</h5>
+            <p>Подключите Вашу почту Gmail к приложению, и все купленные билеты будут автоматически отображаться в приложении</p>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 order-sm-last">
-          <img class="mx-auto d-block" src="images/gmail.png" srcset="images/gmail.png 1x, images/gmail@2x.png 2x, images/gmail@3x.png 3x" alt="App icon">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <img class="mx-auto d-block" src="images/alerts.png" srcset="images/alerts.png 1x, images/alerts@2x.png 2x, images/alerts@3x.png 3x" alt="App icon">
+          </div>
+          <div class="col align-self-center">
+            <h5>Удобные напоминания</h5>
+            <p>Приложение автоматически будет присылать Вам уведомления о предстоящих поездках</p>
+          </div>
         </div>
-        <div class="col align-self-center">
-          <h5>Автоматически синхронизируйте билеты белорусской ЖД с помощью почты Gmail.</h5>
-          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <img class="mx-auto d-block" src="images/alerts.png" srcset="images/alerts.png 1x, images/alerts@2x.png 2x, images/alerts@3x.png 3x" alt="App icon">
-        </div>
-        <div class="col align-self-center">
-          <h5>Настройте множество напоминаний, чтобы никогда не пропустить свой поезд.</h5>
-          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-sm-6 order-sm-last">
-          <img class="mx-auto d-block" src="images/watch.png" srcset="images/watch.png 1x, images/watch@2x.png 2x, images/watch@3x.png 3x" alt="App icon">
-        </div>
-        <div class="col align-self-center">
-          <h5>Получайте доступ к своим билетам в любое момент, даже не открывая приложения с помощью виджета и Apple Watch приложения.</h5>
-          <p>Храните все свои железнодорожные билеты в одном месте и всегда имейте легкий доступ к самой важной информации</p>
+        <div class="row">
+          <div class="col-12 col-sm-6 order-sm-last">
+            <img class="mx-auto d-block" src="images/watch.png" srcset="images/watch.png 1x, images/watch@2x.png 2x, images/watch@3x.png 3x" alt="App icon">
+          </div>
+          <div class="col align-self-center">
+            <h5>Apple Watch и виджеты</h5>
+            <p>Получайте доступ к своим билетам в любое момент, даже не открывая приложения с помощью виджета и Apple Watch приложения</p>
+          </div>
         </div>
       </div>
     </div>
-    
+
+    <div class="jumbotron" id="privacy">
+      <div class="container">
+        <h2 class="section-header">Приватность данных</h2>
+        <p>Приложение заботится о безопасности Ваших данных и сохраняет всю информацию о билетах локально на устройстве, не отправляя ее на сервера.</p>
+        <p>При подключении синхронизации приложение использует доступ к Вашей почте исключительно для обработки сообщений с электронной почты белорусской ЖД. Приложение извлекает информацию о времени и станциях отправления и прибытия, а так же вагон и номер посадочного места.</p>
+        <a href="./privacy.html">Подробнее</a>
+      </div>
+    </div>
+
+    <div class="jumbotron dark" id="developer">
+      <div class="container">
+        <h2 class="section-header">О разработчике</h2>
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <img class="mx-auto d-block rounded-circle" src="images/developer.jpg" srcset="images/developer.jpg 1x, images/developer@2x.jpg 2x, images/developer@3x.jpg 3x" alt="Developer photo">
+          </div>
+          <div class="col align-self-center">
+            <h4 class="developer-name">Соболь Евгений</h4>
+            <p class="developer-subtitle">iOS Разработчик с 2016 года</p>
+            <a href="https://linkedin.com/in/eugene-sobol-a6326b125"><i class="fa fa-linkedin"></i> Linkedin</a>
+            <br>
+            <a href="https://github.com/Banner2404/Railway-ios"><i class="fa fa-github"></i> iOS source code</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
